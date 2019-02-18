@@ -43,8 +43,11 @@ def main():
     inst = clazz(settings=settings)
 
     while True:
-        pass
-
+        try:
+            pass
+        except KeyboardInterrupt as e:
+            logging.info("Terminating...")
+            sys.exit(0)
 
 if __name__ == "__main__":
     # execute only if run as a script
