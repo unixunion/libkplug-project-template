@@ -48,6 +48,7 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
+            # this creates a "hello_world" script off the "main" method in run.py under src/hello_world_binscripts
             'hello_world = hello_world_binscripts.run:main']
     },
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4',
