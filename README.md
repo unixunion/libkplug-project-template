@@ -11,7 +11,7 @@ along with any other generic key:value properties required by the application.
 
 ## dev run
 
-    python ./src/hello_world_binscripts/run.py
+    python ./src/hello_world_binscripts/run.py --config config.yaml
     
 # install
 
