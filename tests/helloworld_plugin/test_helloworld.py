@@ -1,20 +1,19 @@
 __author__ = 'keghol'
 
-import os
-import sys
 import logging
+import sys
+
+import pytest
 from libkplug import KPlugin
 from libksettings import KSettings
-import pytest
+
+import hello_world
 
 logging.basicConfig(level=logging.WARN,
                     format='%(module)s %(filename)s:%(lineno)d %(asctime)s %(levelname)s %(message)s',
                     stream=sys.stdout)
 logging.getLogger().setLevel(logging.INFO)
 
-sys.path.insert(1, os.path.join(sys.path[0], '../../src'))
-
-import hello_world
 
 class TestClass(object):
 
